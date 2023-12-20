@@ -1,0 +1,172 @@
+[debug] [2023-12-16T09:09:34.877Z] ----------------------------------------------------------------------
+[debug] [2023-12-16T09:09:34.879Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\riyas\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2023-12-16T09:09:34.879Z] CLI Version:   13.0.2
+[debug] [2023-12-16T09:09:34.880Z] Platform:      win32
+[debug] [2023-12-16T09:09:34.880Z] Node Version:  v21.1.0
+[debug] [2023-12-16T09:09:34.880Z] Time:          Sat Dec 16 2023 14:39:34 GMT+0530 (India Standard Time)
+[debug] [2023-12-16T09:09:34.880Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-12-16T09:09:34.885Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-12-16T09:09:34.885Z] > authorizing via signed-in user (riyasaxenabdn2002@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\pacestock\port
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-12-16T09:10:27.262Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-12-16T09:10:28.578Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-12-16T09:10:28.578Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project hyawiz-44ca4 (hyawiz) 
+[info] 
+=== Hosting Setup
+[debug] [2023-12-16T09:11:09.469Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/hyawiz-44ca4 [none]
+[debug] [2023-12-16T09:11:10.970Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/hyawiz-44ca4 200
+[debug] [2023-12-16T09:11:10.970Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/hyawiz-44ca4 {"projectId":"hyawiz-44ca4","projectNumber":"1057905421982","displayName":"hyawiz","name":"projects/hyawiz-44ca4","resources":{"hostingSite":"hyawiz-44ca4"},"state":"ACTIVE","etag":"1_9aa0aa35-781a-4bbd-b091-51b037d8b6fc"}
+[info] 
+[info] i  Writing configuration info to firebase.json... 
+[info] i  Writing project information to .firebaserc... 
+[info] 
+[info] +  Firebase initialization complete! 
+[debug] [2023-12-16T09:11:50.305Z] Error: Timed out.
+    at Timeout.<anonymous> (C:\Users\riyas\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:258:49)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-12-16T09:12:48.604Z] ----------------------------------------------------------------------
+[debug] [2023-12-16T09:12:48.606Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\riyas\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-12-16T09:12:48.606Z] CLI Version:   13.0.2
+[debug] [2023-12-16T09:12:48.606Z] Platform:      win32
+[debug] [2023-12-16T09:12:48.606Z] Node Version:  v21.1.0
+[debug] [2023-12-16T09:12:48.606Z] Time:          Sat Dec 16 2023 14:42:48 GMT+0530 (India Standard Time)
+[debug] [2023-12-16T09:12:48.606Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-12-16T09:12:48.706Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-12-16T09:12:48.706Z] > authorizing via signed-in user (riyasaxenabdn2002@gmail.com)
+[debug] [2023-12-16T09:12:48.706Z] [iam] checking project hyawiz-44ca4 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-12-16T09:12:48.708Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/hyawiz-44ca4:testIamPermissions [none]
+[debug] [2023-12-16T09:12:48.708Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/hyawiz-44ca4:testIamPermissions x-goog-quota-user=projects/hyawiz-44ca4
+[debug] [2023-12-16T09:12:48.708Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/hyawiz-44ca4:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-12-16T09:12:52.148Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/hyawiz-44ca4:testIamPermissions 200
+[debug] [2023-12-16T09:12:52.148Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/hyawiz-44ca4:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-12-16T09:12:52.150Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/hyawiz-44ca4 [none]
+[debug] [2023-12-16T09:12:53.471Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/hyawiz-44ca4 200
+[debug] [2023-12-16T09:12:53.471Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/hyawiz-44ca4 {"projectId":"hyawiz-44ca4","projectNumber":"1057905421982","displayName":"hyawiz","name":"projects/hyawiz-44ca4","resources":{"hostingSite":"hyawiz-44ca4"},"state":"ACTIVE","etag":"1_9aa0aa35-781a-4bbd-b091-51b037d8b6fc"}
+[debug] [2023-12-16T09:12:56.926Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/hyawiz-44ca4/sites pageToken=&pageSize=10
+[debug] [2023-12-16T09:13:02.280Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/hyawiz-44ca4/sites 200
+[debug] [2023-12-16T09:13:02.280Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/hyawiz-44ca4/sites {"sites":[{"name":"projects/hyawiz-44ca4/sites/hyawiz-44ca4","defaultUrl":"https://hyawiz-44ca4.web.app","appId":"1:1057905421982:web:957af69a171e1e9467d58f","type":"DEFAULT_SITE"}]}
+[debug] [2023-12-16T09:13:02.281Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:1057905421982:web:957af69a171e1e9467d58f/config [none]
+[debug] [2023-12-16T09:13:06.066Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:1057905421982:web:957af69a171e1e9467d58f/config 200
+[debug] [2023-12-16T09:13:06.067Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:1057905421982:web:957af69a171e1e9467d58f/config {"projectId":"hyawiz-44ca4","appId":"1:1057905421982:web:957af69a171e1e9467d58f","storageBucket":"hyawiz-44ca4.appspot.com","apiKey":"AIzaSyB2iSQACZ6ARWQ1Q4VQABsEemJA6t_hwew","authDomain":"hyawiz-44ca4.firebaseapp.com","messagingSenderId":"1057905421982"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2023-12-16T09:13:13.010Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/hyawiz-44ca4/sites/hyawiz-44ca4 [none]
+[debug] [2023-12-16T09:13:14.564Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/hyawiz-44ca4/sites/hyawiz-44ca4 200
+[debug] [2023-12-16T09:13:14.564Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/hyawiz-44ca4/sites/hyawiz-44ca4 {"name":"projects/hyawiz-44ca4/sites/hyawiz-44ca4","defaultUrl":"https://hyawiz-44ca4.web.app","appId":"1:1057905421982:web:957af69a171e1e9467d58f","type":"DEFAULT_SITE"}
+[info]    Linting and checking validity of types ...
+
+[info]    ▲ Next.js 14.0.4
+
+
+[info]    Creating an optimized production build ...
+
+[info]  ✓ Compiled successfully
+
+[info]    Collecting page data ...
+
+[info] 
+
+[info] > Build optimization failed: found page without a React Component as default export in 
+pages/firebase
+
+See https://nextjs.org/docs/messages/page-without-valid-component for more info.
+
+
+[debug] [2023-12-16T09:13:24.119Z] Error: ENOENT: no such file or directory, open 'C:\pacestock\port\.next\export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-12-16T09:16:00.259Z] ----------------------------------------------------------------------
+[debug] [2023-12-16T09:16:00.261Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\riyas\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-12-16T09:16:00.262Z] CLI Version:   13.0.2
+[debug] [2023-12-16T09:16:00.262Z] Platform:      win32
+[debug] [2023-12-16T09:16:00.262Z] Node Version:  v21.1.0
+[debug] [2023-12-16T09:16:00.262Z] Time:          Sat Dec 16 2023 14:46:00 GMT+0530 (India Standard Time)
+[debug] [2023-12-16T09:16:00.262Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-12-16T09:16:00.315Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-12-16T09:16:00.315Z] > authorizing via signed-in user (riyasaxenabdn2002@gmail.com)
+[debug] [2023-12-16T09:16:00.315Z] [iam] checking project hyawiz-44ca4 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-12-16T09:16:00.317Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/hyawiz-44ca4:testIamPermissions [none]
+[debug] [2023-12-16T09:16:00.317Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/hyawiz-44ca4:testIamPermissions x-goog-quota-user=projects/hyawiz-44ca4
+[debug] [2023-12-16T09:16:00.317Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/hyawiz-44ca4:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-12-16T09:16:03.560Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/hyawiz-44ca4:testIamPermissions 200
+[debug] [2023-12-16T09:16:03.561Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/hyawiz-44ca4:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-12-16T09:16:03.562Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/hyawiz-44ca4 [none]
+[debug] [2023-12-16T09:16:05.065Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/hyawiz-44ca4 200
+[debug] [2023-12-16T09:16:05.066Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/hyawiz-44ca4 {"projectId":"hyawiz-44ca4","projectNumber":"1057905421982","displayName":"hyawiz","name":"projects/hyawiz-44ca4","resources":{"hostingSite":"hyawiz-44ca4"},"state":"ACTIVE","etag":"1_9aa0aa35-781a-4bbd-b091-51b037d8b6fc"}
+[debug] [2023-12-16T09:16:08.614Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/hyawiz-44ca4/sites pageToken=&pageSize=10
+[debug] [2023-12-16T09:16:09.978Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/hyawiz-44ca4/sites 200
+[debug] [2023-12-16T09:16:09.978Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/hyawiz-44ca4/sites {"sites":[{"name":"projects/hyawiz-44ca4/sites/hyawiz-44ca4","defaultUrl":"https://hyawiz-44ca4.web.app","appId":"1:1057905421982:web:957af69a171e1e9467d58f","type":"DEFAULT_SITE"}]}
+[debug] [2023-12-16T09:16:09.979Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:1057905421982:web:957af69a171e1e9467d58f/config [none]
+[debug] [2023-12-16T09:16:11.205Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:1057905421982:web:957af69a171e1e9467d58f/config 200
+[debug] [2023-12-16T09:16:11.205Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:1057905421982:web:957af69a171e1e9467d58f/config {"projectId":"hyawiz-44ca4","appId":"1:1057905421982:web:957af69a171e1e9467d58f","storageBucket":"hyawiz-44ca4.appspot.com","apiKey":"AIzaSyB2iSQACZ6ARWQ1Q4VQABsEemJA6t_hwew","authDomain":"hyawiz-44ca4.firebaseapp.com","messagingSenderId":"1057905421982"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2023-12-16T09:16:17.992Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/hyawiz-44ca4/sites/hyawiz-44ca4 [none]
+[debug] [2023-12-16T09:16:20.729Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/hyawiz-44ca4/sites/hyawiz-44ca4 200
+[debug] [2023-12-16T09:16:20.729Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/hyawiz-44ca4/sites/hyawiz-44ca4 {"name":"projects/hyawiz-44ca4/sites/hyawiz-44ca4","defaultUrl":"https://hyawiz-44ca4.web.app","appId":"1:1057905421982:web:957af69a171e1e9467d58f","type":"DEFAULT_SITE"}
+[info]    Linting and checking validity of types ...
+
+[info]    ▲ Next.js 14.0.4
+
+[info] 
+   Creating an optimized production build ...
+
+[info]  ✓ Compiled successfully
+
+[info]    Collecting page data ...
+
+[info] 
+
+[info] > Build optimization failed: found page without a React Component as default export in 
+pages/firebase
+
+See https://nextjs.org/docs/messages/page-without-valid-component for more info.
+
+
+[debug] [2023-12-16T09:16:26.169Z] Error: ENOENT: no such file or directory, open 'C:\pacestock\port\.next\export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.

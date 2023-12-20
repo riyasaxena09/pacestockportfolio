@@ -1,0 +1,142 @@
+/* styles/ResponsiveComponent.module.css */
+/* .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .image {
+    /* flex: 1; */
+    /* margin:10px;
+   
+  }
+  
+  .img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .content {
+
+    margin:1px;
+    text-align: left;
+  }
+  
+  /* Media query for smaller screens */
+  /* @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    } */
+  
+    /* .image,
+    .content {
+      /* flex: 1; */
+      /* width: 50%;
+      margin: 5px 0;
+    }
+  }
+  .about{
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    font-size:5rem;
+  
+  } 
+  .paragraph{
+    font-size:1rem;
+  
+  }  
+   styles/ResponsiveComponent.module.css */
+.container {
+    background-color: rgb(133, 133, 183);
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content:space-around;
+    align-items: center;
+    padding: 5px;
+  }
+  
+  .image {
+ 
+    margin: 5px;
+  }
+  
+  .img {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    width: 80%;
+    max-width: 80%;
+    height: auto;
+
+    border-radius: 50%;
+  }
+  
+  .content {
+max-width: 600px;
+    margin:5px;
+    text-align: left;
+  }
+  
+  /* Media query for smaller screens */
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+   
+    .image,
+    .content {
+   
+      width: 50%;
+      /* margin: 10px 0; */
+    }
+    
+    .img {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+  }
+  .about{
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 10vmin;
+  
+  } 
+  .paragraph{
+    font-size:3.1vmin;
+ 
+  }  
+  .btn{
+    display: flex;
+    justify-content: center;
+    font-size:3vmin;
+    border-radius: 10px;
+    padding: 15px;
+    margin-left: 13vw;
+  }
+  /* styles/ResponsiveHeading.module.css */
+.headingContainer {
+    text-align: center;
+  }
+  
+  .responsiveHeading {
+    font-size: 3rem; /* Adjust the base font size as needed */
+  
+    /* Media query for smaller screens */
+    @media screen and (max-width: 768px) {
+      font-size: 2rem; /* Adjust the font size for smaller screens */
+    }
+  }
+  
+  .a{
+    text-decoration: none;
+    color: black;
+  }
+  .a:hover{
+    font-size:large;
+  }

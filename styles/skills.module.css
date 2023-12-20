@@ -1,0 +1,65 @@
+.headingContainer {
+    text-align: center;
+    margin: 0px;
+    padding:100px;
+  }
+  
+  .responsiveHeading {
+    font-size: 3rem; /* Adjust the base font size as needed */
+  
+    /* Media query for smaller screens */
+    @media screen and (max-width: 768px) {
+      font-size: 2rem; /* Adjust the font size for smaller screens */
+    }
+  }
+  .body{
+    background-color: rgb(136, 128, 128);
+    margin-top:0;
+
+  }
+/* styles/SkillsBars.module.css */
+/* styles/SkillsBars.module.css */
+.skillsBarsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .skillBar {
+    width: 45%;
+    margin: 30px;
+    
+  }
+  
+  .skillName {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .progressBar {
+    height: 15px;
+    background-color: #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .progress {
+    height: 100%;
+    width: 0;
+    background-color: #4caf50; /* Green color for the progress */
+  }
+  
+  /* Animation for the progress bar */
+  .animate {
+    animation: progressBarAnimation 1s ease-out;
+  }
+  
+  @keyframes progressBarAnimation {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  

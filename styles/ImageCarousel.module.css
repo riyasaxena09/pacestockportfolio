@@ -1,0 +1,75 @@
+/* styles/ImageCarousel.module.css */
+/* styles/ImageWithContent.module.css */
+.imageWithContentContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .def{
+    width:35vw;
+    height:35vw;
+
+  }
+  .body{
+    background-color: azure;
+   margin:0px;
+   margin-top:0px;
+    padding: 100px;
+  }
+  .carouselContainer {
+    width: 50%; /* Adjust the width as needed */
+  }
+  .headingContainer {
+    text-align: center;
+  }
+  
+  .responsiveHeading {
+    font-size: 3rem; /* Adjust the base font size as needed */
+  
+    /* Media query for smaller screens */
+    @media screen and (max-width: 768px) {
+ 
+    }
+}
+  .img{
+    padding: 50px;
+  }
+  .contentContainer {
+    width: 40%; /* Adjust the width as needed */
+    text-align: left;
+    padding: 20px;
+    font-size: 2vw;
+    margin:10px;
+  }
+  /* styles/ResponsiveParagraph.module.css */
+.paragraphContainer {
+    max-width: 800px; /* Set a maximum width for the paragraph container */
+    margin: 0 auto; /* Center the paragraph container */
+    padding: 10px; /* Add padding for better readability */
+  }
+  
+  .p {
+    font-size: 21px; /* Set a base font size */
+    line-height: 1.6; /* Set a base line height */
+  }
+  
+  /* Media query for smaller screens */
+  @media screen and (max-width: 768px) {
+    .p {
+      font-size: 16px; /* Adjust font size for smaller screens */
+    }
+  }
+  
+  /* Media query for smaller screens */
+  @media screen and (max-width: 768px) {
+    .imageWithContentContainer {
+      flex-direction: column;
+    }
+  
+    .carouselContainer,
+    .contentContainer {
+      width: 100%;
+    }
+  }
+  
